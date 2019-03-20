@@ -23,6 +23,7 @@ Encore
     .addStyleEntry('css/app', './assets/css/app.scss')
     .addStyleEntry('css/game', './assets/css/game.scss')
     .addStyleEntry('css/component/sidebar', './assets/css/components/sidebar.scss')
+    .addStyleEntry('css/component/widget', './assets/css/components/widget.scss')
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 

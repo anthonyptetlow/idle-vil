@@ -25,5 +25,42 @@
 
     <div class="wrapper">
         {% include 'components/nav/game/sidebar.html.twig' %}
+
+        <div id="content" class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    {% include 'components/widget/widget.html.twig' with {
+                        'title': 'Profit',
+                        'number': '£152,023.25',
+                        'description': 'Worse than last week (-12%)',
+                        'percent': 73
+                    } %}
+                </div>
+                <div class="col-6 col-lg-3">
+                    {% include 'components/widget/widget.html.twig' with {
+                        'title': 'Sales',
+                        'number': '6203',
+                        'description': 'Worse than last week (-16%)',
+                        'percent': 80
+                    } %}
+                </div>
+                <div class="col-6 col-lg-3">
+                    {% include 'components/widget/widget.html.twig' with {
+                        'title': 'Visitors',
+                        'number': '12000',
+                        'description': 'Better than last week (20%)',
+                        'percent': 100
+                    } %}
+                </div>
+                <div class="col-6 col-lg-3">
+                    {% include 'components/widget/widget.html.twig' with {
+                        'title': 'Profit (again)',
+                        'number': '£152,023.25',
+                        'description': 'Worse than last week (-12%)',
+                        'percent': 10
+                    } %}
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
